@@ -69,7 +69,7 @@
         "Properties": {
           "version": {
             "type": "object",
-            "Propeties": {
+            "Properties": {
               "major": {
                 "type": "integer",
                 "minimum": 7,
@@ -87,7 +87,7 @@
           },
           "network_version": {
             "type": "object",
-            "Propeties": {
+            "Properties": {
               "chain_name": {
                 "type": "string"
               },
