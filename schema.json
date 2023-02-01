@@ -125,7 +125,7 @@
       },
       "snapshot_version": {
         "type": "integer",
-        "description": "Version of Octez snapshot format (.rolling). Tarball will not have a snapshot_version.",
+        "description": "Version of Octez snapshot format. Tarball will not have a snapshot_version.",
         "examples": [5, 4]
       },
       "context_elements": {
