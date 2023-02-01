@@ -6,7 +6,7 @@
   {
     "type": "object",
     "description": "A single Tezos Snapshot",
-    "required": [ "block_hash", "block_height", "block_timestamp", "filename", "url", "sha256", "filesize_bytes", "filesize", "tezos_version", "chain_name", "artifact_type", "context_elements" ],
+    "required": [ "block_hash", "block_height", "block_timestamp", "filename", "url", "sha256", "filesize_bytes", "filesize", "tezos_version", "chain_name", "artifact_type" ],
     "Properties":
     {
       "block_hash": {
