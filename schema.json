@@ -95,28 +95,6 @@
               }
             }
           },
-          "network_version": {
-            "description": "A version number for the network protocol (includes distributed DB version and p2p version)",
-            "type": "object",
-            "required": ["chain_name", "distributed_db_version", "p2p_version"],
-            "properties": {
-              "chain_name": {
-                "type": "string"
-              },
-              "distributed_db_version": {
-                "description": "A version number for the distributed DB protocol",
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 65535
-              },
-              "p2p_version": {
-                "description": "A version number for the p2p layer.",
-                "type": "integer",
-                "minimum": 0,
-                "maximum": 65535
-              }
-            }
-          },
           "commit_info": {
             "required": ["commit_hash", "commit_date"],
             "properties": {
