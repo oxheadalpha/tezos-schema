@@ -19,7 +19,7 @@
       "chain_name",
       "artifact_type"
     ],
-    "Properties": {
+    "properties": {
       "block_hash": {
         "type": "string",
         "description": "A reference for a block in the Tezos blockchain.",
@@ -71,7 +71,7 @@
           "network_version",
           "commit_info"
         ],
-        "Properties": {
+        "properties": {
           "implementation": {
             "type": "string",
             "examples": ["octez", "tezedge"]
@@ -79,7 +79,7 @@
           "version": {
             "type": "object",
             "required": ["major", "minor", "additional_info"],
-            "Properties": {
+            "properties": {
               "major": {
                 "type": "integer",
                 "minimum": 7,
@@ -99,7 +99,7 @@
             "description": "A version number for the network protocol (includes distributed DB version and p2p version)",
             "type": "object",
             "required": ["chain_name", "distributed_db_version", "p2p_version"],
-            "Properties": {
+            "properties": {
               "chain_name": {
                 "type": "string"
               },
@@ -119,7 +119,7 @@
           },
           "commit_info": {
             "required": ["commit_hash", "commit_date"],
-            "Properties": {
+            "properties": {
               "commit_hash": {
                 "type": "string"
               },
