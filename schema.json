@@ -91,6 +91,7 @@
             }
           },
           "network_version": {
+            "description": "A version number for the network protocol (includes distributed DB version and p2p version)",
             "type": "object",
             "required": [ "chain_name", "distributed_db_version", "p2p_version" ],
             "Properties": {
@@ -98,9 +99,10 @@
                 "type": "string"
               },
               "distributed_db_version": {
+                "description": "A version number for the distributed DB protocol",
                 "type": "integer",
                 "minimum": 0,
-                "maximum": 99
+                "maximum": 65535
               },
               "p2p_version": {
                 "description": "A version number for the p2p layer.",
@@ -142,12 +144,11 @@
         "enum": ["tarball", "tezos-snapshot"]
       },
       "snapshot_version": { 
-        "type": "string",
+        "type": "integer",
         "description": "Version of Octez snapshot format (.rolling). Tarball will not have a snapshot_version.",
         "examples": [
-          "5",
-          "4",
-          ""
+          5,
+          4
         ]
       },
       "context_elements": {
