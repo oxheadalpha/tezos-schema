@@ -48,7 +48,7 @@
       },
       "sha256": {
         "type": "string",
-        "description": "Hashed sum of file contents for checking data integrity.",
+        "description": "Hash of the file contents for checking data integrity.",
         "examples": [
           "7961409dad2b8ff917551eea4a5178c1a6d95a21f807f1020a34e3acedaaad4c"
         ]
