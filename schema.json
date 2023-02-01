@@ -138,7 +138,7 @@
       "history_mode": {
         "type": "string",
         "description": "Type of chain data contained in snapshot",
-        "enum": ["archive", "rolling"]
+        "enum": ["archive", "full", "rolling"]
       },
       "artifact_type": {
         "type": "string",
