@@ -65,12 +65,7 @@
       "tezos_version": {
         "type": "object",
         "description": "Tezos version running on the node this data is from",
-        "required": [
-          "implementation",
-          "version",
-          "network_version",
-          "commit_info"
-        ],
+        "required": ["implementation", "version", "commit_info"],
         "properties": {
           "implementation": {
             "type": "string",
