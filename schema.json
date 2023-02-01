@@ -5,7 +5,7 @@
   "items":
   {
     "type": "object",
-    "description": "A single Tezos Snapshot.  The only fields not mandatory are snapshot_version, and context_elements.",
+    "description": "The metadata of a single Tezos node storage artifact (snapshot or tarball).  The only fields not mandatory are snapshot_version, and context_elements.",
     "required": [ "block_hash", "block_height", "block_timestamp", "filename", "url", "sha256", "filesize_bytes", "filesize", "tezos_version", "chain_name", "artifact_type" ],
     "Properties":
     {
