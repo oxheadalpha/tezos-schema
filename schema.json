@@ -132,8 +132,8 @@
       },
       "chain_name": {
         "type": "string",
-        "description": "Name of Tezos blockchain- mainnet, or testnet.",
-        "examples": ["mainnet", "ghostnet"]
+        "description": "Name of Tezos blockchain",
+        "examples": ["TEZOS_MAINNET", "TEZOS_LIMANET_2022-10-13T15:00:00Z"]
       },
       "history_mode": {
         "type": "string",
