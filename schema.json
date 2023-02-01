@@ -64,11 +64,57 @@
         ]
       },
       "tezos_version": {
-        "type": "string",
+        "type": "object",
         "description": "Tezos version running on the node this data is from",
-        "examples": [
-          "763259c5 (2022-12-01 10:20:58 +0000) (15.1)"
-        ]
+        "Properties": {
+          "version": {
+            "type": "object",
+            "Propeties": {
+              "major": {
+                "type": "integer",
+                "minimum": 7,
+                "maximum": 99
+              },
+              "minor": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 99
+              },
+              "additional_info": {
+                "type": "string"
+              }
+            }
+          },
+          "network_version": {
+            "type": "object",
+            "Propeties": {
+              "chain_name": {
+                "type": "string"
+              },
+              "distributed_db_version": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 99
+              },
+              "p2p_version": {
+                "description": "A version number for the p2p layer.",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 65535
+              }
+            }
+          },
+          "commit_info": {
+            "Properties": {
+              "commit_hash": {
+                "type": "string"
+              },
+              "commit_date": {
+                "type": "string"
+              }
+            }
+          }
+        }
       },
       "chain_name": {
         "type": "string",
@@ -88,14 +134,14 @@
         "description": "Tarball or Tezos Snapshot",
         "enum": ["tarball", "tezos-snapshot"]
       },
-      "snapshot_version": {
+      "snapshot_version": { 
         "type": "string",
-        "description": "Version of Tezos snapshot engine (.snapshot). Tarball will not have a snapshot_version.",
+        "description": "Version of Octez snapshot format (.rolling). Tarball will not have a snapshot_version.",
         "examples": [
           "5",
           "4",
           ""
-        ]
+        ] //OPTIONAL
       },
       "context_elements": {
         "type": "string",
