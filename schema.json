@@ -69,8 +69,15 @@
       "tezos_version": {
         "type": "object",
         "description": "Tezos version running on the node this data is from",
-        "required": [ "version", "network_version", "commit_info" ],
+        "required": [ "implementation", "version", "network_version", "commit_info" ],
         "Properties": {
+          "implementation": {
+            "type": "string",
+            "examples": [
+              "octez",
+              "tezedge"
+            ]
+          },
           "version": {
             "type": "object",
             "required": [ "major", "minor", "additional_info" ],
