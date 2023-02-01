@@ -6,6 +6,7 @@
   {
     "type": "object",
     "description": "A single Tezos Snapshot",
+    "required": [ "block_hash", "block_height", "block_timestamp", "filename", "url", "sha256", "filesize_bytes", "filesize", "tezos_version", "chain_name", "artifact_type", "context_elements" ],
     "Properties":
     {
       "block_hash": {
@@ -16,10 +17,11 @@
         ]
       },
       "block_height": { 
-        "type": "string",
+        "type": "integer",
         "description": "The number of blocks preceding this one in the blockchain",
         "examples": [
-          "438782"
+          23466334,
+          345667223
         ]
       },
       "block_timestamp": {
@@ -50,9 +52,10 @@
         ]
       },
       "filesize_bytes": {
-        "type": "string",
+        "type": "integer",
         "examples": [
-          "53963264"
+          53963264,
+          234234
         ]
       },
       "filesize": {
@@ -66,9 +69,11 @@
       "tezos_version": {
         "type": "object",
         "description": "Tezos version running on the node this data is from",
+        "required": [ "version", "network_version", "commit_info" ],
         "Properties": {
           "version": {
             "type": "object",
+            "required": [ "major", "minor", "additional_info" ],
             "Properties": {
               "major": {
                 "type": "integer",
@@ -87,6 +92,7 @@
           },
           "network_version": {
             "type": "object",
+            "required": [ "chain_name", "distributed_db_version", "p2p_version" ],
             "Properties": {
               "chain_name": {
                 "type": "string"
@@ -105,6 +111,7 @@
             }
           },
           "commit_info": {
+            "required": [ "commit_hash", "commit_date" ],
             "Properties": {
               "commit_hash": {
                 "type": "string"
@@ -141,13 +148,14 @@
           "5",
           "4",
           ""
-        ] //OPTIONAL
+        ]
       },
       "context_elements": {
-        "type": "string",
+        "type": "integer",
         "description": "Number of references to each preceding block's ledger state.",
         "examples": [
-          "38984460"
+          23023,
+          2342342
         ]
       }
     }
