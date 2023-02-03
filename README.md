@@ -71,7 +71,7 @@ func main() {
         }
     }
 }
-// Returns "The document is valid" if sucessful
+// Returns "The document is valid" if successful
 ```
 
 ### npm/*script
