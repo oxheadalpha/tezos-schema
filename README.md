@@ -18,7 +18,7 @@ https://github.com/python-jsonschema/check-jsonschema
 
 ```bash
 pip install check-jsonschema
-check-jsonschema --schemafile schema.json input.json
+check-jsonschema --schemafile https://raw.githubusercontent.com/oxheadalpha/tezos-snapshot-metadata-schema/main/tezos-snapshot-metadata.schema.json input.json
 ok -- validation done
 ```
 
