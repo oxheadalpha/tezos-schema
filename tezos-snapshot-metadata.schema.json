@@ -122,11 +122,6 @@
         "type": "integer",
         "description": "Version of Octez snapshot format. Tarball will not have a snapshot_version.",
         "examples": [5, 4]
-      },
-      "context_elements": {
-        "type": "integer",
-        "description": "Number of references to each preceding block's ledger state.",
-        "examples": [23023, 2342342]
       }
     }
   }
