@@ -3,7 +3,6 @@
   "title": "Tezos Snapshots",
   "description": "List of all available Tezos Snapshots",
   "required": ["data", "org", "date_generated", "schema_version"],
-  "type": "object",
   "org":{
     "description": "Organization that published the metadata.",
     "type": "string"
