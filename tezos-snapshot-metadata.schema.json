@@ -11,10 +11,6 @@
     "description": "ISO 8601 UTC timestamp of when the metadata was generated.",
     "type": "string"
   },
-  "$schema":{
-    "type": "string",
-    "description": "URL of schema this metadata was validated against."
-  },
   "data": {
     "type": "array",
     "items": {
