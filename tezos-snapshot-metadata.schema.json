@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
   "title": "Tezos Snapshots",
   "description": "List of all available Tezos Snapshots",
   "required": ["data", "org", "date_generated", "schema_version"],
